@@ -1,0 +1,3 @@
+a = get_int("Quelle est la valeur du premier entier?\n")
+b = get_int("Quelle est la valeur du deuxième entier?\n")
+print(f"Le produit des deux entiers vaut : {a * b} \n")
