@@ -8,9 +8,9 @@ int main(void)
     int a;
     int b;
 
-    printf("La valeur de entier a est : ");
+    printf("La valeur de l'entier a est : ");
     scanf("%i", &a);
-    printf("La valeur de entier b est : ");
+    printf("La valeur de l'entier b est : ");
     scanf("%i", &b);
     printf("De base a vaut %i et b vaut %i\n", a, b);
     swap(&a, &b);
