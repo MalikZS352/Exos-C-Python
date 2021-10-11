@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int a;
+    int b;
+    printf("Quelle est la valeur du premier entier?\n");
+    scanf("%i", &a);
+    printf("Quelle est la valeur du deuxième entier?\n");
+    scanf("%i", &b);
+    printf("Le produit des deux entiers vaut : %i \n", (a) * (b));
+}
