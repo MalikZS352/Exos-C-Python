@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int a;
+    int b;
+    int c;
+
+    printf("La valeur de l'entier a est : ");
+    scanf("%i", &a);
+    printf("La valeur de l'entier b est : ");
+    scanf("%i", &b);
+    printf("La valeur de l'entier c est : ");
+    scanf("%i", &c);
+
+    if (a > b && a > c)
+    {
+        printf("a représente la plus grande valeur \n");
+    }
+    else if (b > a && b > c)
+    {
+        printf("b représente la plus grande valeur \n");
+    }
+    else if (c > a && c > b)
+    {
+        printf("c représente la plus grande valeur \n");
+    }
+
+}
