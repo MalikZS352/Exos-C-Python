@@ -1,0 +1,14 @@
+from cs50 import get_int
+
+a = get_int("La valeur de l'entier a est : \n")
+b = get_int("La valeur de l'entier a est : \n")
+c = get_int("La valeur de l'entier a est : \n")
+
+if a > b and a > c:
+    print("a représente la plus grande valeur")
+
+elif b > a and b > c:
+    print("b représente la plus grande valeur")
+
+elif c > a and c > b:
+    print("c représente la plus grande valeur")
