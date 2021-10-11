@@ -4,12 +4,8 @@ def main():
     a = get_int("La valeur de l'entier a est :\n")
     b = get_int("La valeur de l'entier b est :\n")
     print(f"De base a vaut {a} et b vaut {b} \n")
-    swap(a, b)
-    print(f"Désormais a vaut {b} et b vaut {a} \n")
-
-def swap(c, d):
-    tmp = c
-    c = d
-    d = tmp
+    a, b = b, a
+    print(f"Désormais a vaut {a} et b vaut {b} \n")
 
 main()
+
