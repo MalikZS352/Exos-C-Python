@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void swap(int *a, int *b);
+
+int main(void)
+{
+    int a;
+    int b;
+
+    printf("La valeur de entier a est : ");
+    scanf("%i", &a);
+    printf("La valeur de entier b est : ");
+    scanf("%i", &b);
+    printf("De base a vaut %i et b vaut %i\n", a, b);
+    swap(&a, &b);
+    printf("Désormais a vaut %i et b vaut à présent %i\n", a, b);
+}
+
+void swap(int *c, int *d)
+{
+    int tmp = *c;
+    *c = *d;
+    *d = tmp;
+}
