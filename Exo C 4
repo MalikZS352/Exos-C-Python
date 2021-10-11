@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    FILE *file = fopen("immatriculation.csv", "a");
+
+    if (!file)
+    {
+        return 1;
+    }
+    char modele[1000];
+    char immatriculation[1000];
+    printf("La voiture est de modèle : ");
+    scanf("%49s", modele);
+    printf("Son numéro d'immatriculation est: ");
+    scanf("%999s", immatriculation);
+
+    fprintf(file, "%s, %s \n", modele, immatriculation);
+
+    fclose(file);
+}
